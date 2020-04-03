@@ -15,7 +15,6 @@ median_calories=np.median(calorie_stats)
 print("median is: " + str(median_calories))
 
 nth_percentile = np.percentile(calorie_stats, 4)
-#print(nth_percentile)
 more_calories = np.mean(calorie_stats > 60)*100
 print(str(more_calories) + "% of our cometitors have more calories than our cereal")
 

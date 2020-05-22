@@ -20,7 +20,23 @@ df = pd.DataFrame({
 # Setting styles:
 sns.set_style("darkgrid")
 sns.set_palette("pastel")
-
+sns.set_context("talk", rc={'axes.labelsize': 17.6,
+ 'axes.titlesize': 19.200000000000003,
+ 'font.size': 19.200000000000003,
+ 'grid.linewidth': 0.8,
+ 'legend.fontsize': 15.0,
+ 'lines.linewidth': 2.8000000000000003,
+ 'lines.markeredgewidth': 0.0,
+ 'lines.markersize': 11.200000000000001,
+ 'patch.linewidth': 0.48,
+ 'xtick.labelsize': 16.0,
+ 'xtick.major.pad': 11.200000000000001,
+ 'xtick.major.width': 1.6,
+ 'xtick.minor.width': 0.8,
+ 'ytick.labelsize': 16.0,
+ 'ytick.major.pad': 11.200000000000001,
+ 'ytick.major.width': 1.6,
+ 'ytick.minor.width': 0.8})
 sns.violinplot(data=df, x='label', y='value')
 sns.despine()
 plt.show()

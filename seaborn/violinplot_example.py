@@ -18,10 +18,10 @@ df = pd.DataFrame({
 })
 
 # Setting styles:
-sns.set_style("darkgrid")
-#options include: darkgrid, whitegrid, dark, white, and ticks
-sns.set_palette("pastel")
-# other options include: ("Paired"), 
+sns.set_style("darkgrid") # options include: darkgrid, whitegrid, dark, white, and ticks
+sns.set_palette("pastel") # other options include: paired (?),deep, muted, pastel, bright, dark, and colorblind (!) 
+                          # u can also specify how many colors we want like this: sns.color_palette("Paired", 9)
+                          # and view them like this: sns.palplot(custom_palette)
 
 #the scale can be controlled by passing paper, notebook, talk, or poster to sns.set_context
 sns.set_context("talk", rc={'axes.labelsize': 17.6,

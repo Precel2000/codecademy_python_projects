@@ -22,4 +22,5 @@ sns.set_style("darkgrid")
 sns.set_palette("pastel")
 
 sns.violinplot(data=df, x='label', y='value')
+sns.despine()
 plt.show()

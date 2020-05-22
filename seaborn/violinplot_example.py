@@ -19,7 +19,11 @@ df = pd.DataFrame({
 
 # Setting styles:
 sns.set_style("darkgrid")
+#options include: darkgrid, whitegrid, dark, white, and ticks
 sns.set_palette("pastel")
+# other options include: ("Paired"), 
+
+#the scale can be controlled by passing paper, notebook, talk, or poster to sns.set_context
 sns.set_context("talk", rc={'axes.labelsize': 17.6,
  'axes.titlesize': 19.200000000000003,
  'font.size': 19.200000000000003,
@@ -37,6 +41,14 @@ sns.set_context("talk", rc={'axes.labelsize': 17.6,
  'ytick.major.pad': 11.200000000000001,
  'ytick.major.width': 1.6,
  'ytick.minor.width': 0.8})
+
+#plot the graph
 sns.violinplot(data=df, x='label', y='value')
-sns.despine()
+
+#despines the top, left and right side of the chart 
+#it will cut the axes to fit the ticks present. 
+#the spine is moved away from the data
+sns.despine(left=True, offset=10, trim=True))
+
+#sinplot() can be used in place of plt.show()
 plt.show()

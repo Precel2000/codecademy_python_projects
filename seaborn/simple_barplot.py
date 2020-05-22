@@ -7,6 +7,6 @@ import seaborn as sns
 
 gradebook = pd.read_csv("gradebook.csv")
 
-sns.barplot(data=gradebook, x="assignment_name", y="grade")
+sns.barplot(data=gradebook, x="assignment_name", y="grade", ci='sd')
 
 plt.show()

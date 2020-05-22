@@ -50,5 +50,4 @@ sns.violinplot(data=df, x='label', y='value')
 #the spine is moved away from the data
 sns.despine(left=True, offset=10, trim=True))
 
-#sinplot() can be used in place of plt.show()
 plt.show()

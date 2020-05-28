@@ -20,3 +20,10 @@ plt.pie(counts, labels=cuisines, autopct='%d%%')
 plt.axis('equal')
 plt.title('Number of restaurants per cuisine type')
 plt.show()
+
+#investigate the 'orders' in each month
+orders = pd.read_csv('orders.csv')
+#create the new 'month' column
+orders['month'] = orders.date.apply(lambda x: x.split('-')[0])
+avg_order = orders.groupby('month').price.mean().reset_index()
+std_order = orders.groupby('month').price.std().reset_index()

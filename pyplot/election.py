@@ -1,4 +1,3 @@
-import codecademylib
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -17,6 +16,7 @@ percentage_ceballos = 100*total_ceballos/total_all
 print(percentage_ceballos)
 #our survey as binomial distribution example
 possible_surveys=np.random.binomial(total_all, 0.54, size=10000) / float(total_all)
+#plot the results
 plt.hist(possible_surveys, 20, (0,1))
 plt.show()
 ceballos_loss_surveys = np.mean(possible_surveys < 0.5)

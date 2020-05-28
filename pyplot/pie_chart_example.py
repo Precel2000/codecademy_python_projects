@@ -1,4 +1,3 @@
-import codecademylib
 from matplotlib import pyplot as plt
 
 unit_topics = ['Limits', 'Derivatives', 'Integrals', 'Diff Eq', 'Applications']
